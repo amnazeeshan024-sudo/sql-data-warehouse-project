@@ -1,13 +1,13 @@
- Data Catalog for Gold Layer
+# Data Catalog for Gold Layer
 
-Overview
+## Overview
 The Gold Layer is the business-level data representation, structured to support analytical and reporting use cases. It consists of **dimension tables** and **fact tables** for specific business metrics.
 
 ---
 
-1. gold.dim_customers
-- Purpose: Stores customer details enriched with demographic and geographic data.
-- Columns:
+### 1. **gold.dim_customers**
+- **Purpose:** Stores customer details enriched with demographic and geographic data.
+- **Columns:**
 
 | Column Name      | Data Type     | Description                                                                                   |
 |------------------|---------------|-----------------------------------------------------------------------------------------------|
@@ -23,9 +23,10 @@ The Gold Layer is the business-level data representation, structured to support 
 | create_date      | DATE          | The date and time when the customer record was created in the system|
 
 ---
-2. gold.dim_products
-- Purpose: Provides information about the products and their attributes.
-- Columns:
+
+### 2. **gold.dim_products**
+- **Purpose:** Provides information about the products and their attributes.
+- **Columns:**
 
 | Column Name         | Data Type     | Description                                                                                   |
 |---------------------|---------------|-----------------------------------------------------------------------------------------------|
@@ -43,9 +44,9 @@ The Gold Layer is the business-level data representation, structured to support 
 
 ---
 
- 3. gold.fact_sales
-- Purpose: Stores transactional sales data for analytical purposes.
-- Columns:
+### 3. **gold.fact_sales**
+- **Purpose:** Stores transactional sales data for analytical purposes.
+- **Columns:**
 
 | Column Name     | Data Type     | Description                                                                                   |
 |-----------------|---------------|-----------------------------------------------------------------------------------------------|
@@ -58,4 +59,3 @@ The Gold Layer is the business-level data representation, structured to support 
 | sales_amount    | INT           | The total monetary value of the sale for the line item, in whole currency units (e.g., 25).   |
 | quantity        | INT           | The number of units of the product ordered for the line item (e.g., 1).                       |
 | price           | INT           | The price per unit of the product for the line item, in whole currency units (e.g., 25).      |
-data_catalog.md…]()
